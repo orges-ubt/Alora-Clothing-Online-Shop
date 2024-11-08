@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'DM Sans',sans-serif;
+}
+
+.background-image {
+    position: relative;
+    background-image: url('images/foto1.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    text-align: center;
+}
+
+.center-background{
+    width: 900px; 
+    height: 500px; 
+    margin: 50px auto; 
+    background-image: url('images/foto1.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center ;
+    text-align: center;
+    border: 1px solid #ddd;
+    color:white; 
+    
+    
+}
+
+.shop-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    color:black;
+    border:none;
+    border-radius: 5px; 
+    cursor:pointer;
+    margin-top: 15px;   
+}
+
+.shop-button:hover{
+    background-color: white;
+}
+
+p {
+    color:white;
+   
+}
