@@ -90,7 +90,7 @@
     box-sizing: border-box;
     font-family:'DM Sans',sans-serif;
 }
-
+/* Clothing Part */
 .background-image {
     position: relative;
     background-image: url('images/foto1.webp');
@@ -102,9 +102,9 @@
 
 .content{
     position:absolute;
-    top: 130%;
-    left:72%;
-    transform: translate(-130%, -72%);
+    top: 150%;
+    left:75%;
+    transform: translate(-150%, -75%);
     color:white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
@@ -148,14 +148,7 @@ p {
     color:white;
    
 }
-
-
-
-
-
-
-
-
+/* Shoes Part */
 .background2-image {
     position: relative;
     background-image: url('images/foto2.jpg');
@@ -167,9 +160,9 @@ p {
 
 .content2{
     position:absolute;
-    top: 200%;
-    left:80%;
-    transform: translate(-200%, -80%);
+    top: 225%;
+    left:81%;
+    transform: translate(-225%, -81%);
     color:white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
@@ -190,9 +183,6 @@ p {
     text-align: center;
     border: 1px solid #ddd;
     color:white;
-   
-     
-    
     
 }
 
