@@ -79,11 +79,12 @@
 
 .content{
     position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    top: 130%;
+    left:72%;
+    transform: translate(-130%, -72%);
     color:white;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .center-background{
@@ -124,3 +125,74 @@ p {
     color:white;
    
 }
+
+
+
+
+
+
+
+
+.background2-image {
+    position: relative;
+    background-image: url('images/foto2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+.content2{
+    position:absolute;
+    top: 200%;
+    left:80%;
+    transform: translate(-200%, -80%);
+    color:white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.center-background2{
+    width: 900px; 
+    height: 500px; 
+    margin: 50px auto; 
+    background-image: url('images/foto2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center ;
+    text-align: center;
+    border: 1px solid #ddd;
+    color:white;
+   
+     
+    
+    
+}
+
+.shop-button2{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    color:black;
+    border:none;
+    border-radius: 5px; 
+    cursor:pointer;
+    margin-top: 15px;   
+}
+
+.shop-button2:hover{
+    background-color: white;
+}
+
+p {
+    color:white;
+}
+
+.content2 p {
+    color: white;
+}
+
