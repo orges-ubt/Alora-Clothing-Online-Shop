@@ -48,3 +48,16 @@
   margin-left: 20px;
   cursor: pointer;
 }
+/* Slider Styling */
+.slider {
+  position: relative;
+  width: 900px;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+.slider img {
+  width: 900px;
+  height: 500px;
+  display: none;
+}
