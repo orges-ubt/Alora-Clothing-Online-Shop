@@ -450,8 +450,9 @@ input {
 }
 #submit {
   width: 200px;
-  margin: 10px 50px;
   padding: 10px 80px;
+  margin-left: 50px;
+  margin-right: auto;
   background-color:#ffffff;
   color: white;
   border: 2px solid black;
@@ -492,27 +493,6 @@ input {
   margin:10px 60px;
   font-size: 14px;
   border-radius: 5px;
-}
-#submit {
-  width: 200px;
-  margin: 10px 50px;
-  padding: 10px 80px;
-  background-color:#ffffff;
-  color: white;
-  border: 2px solid black;
-  border-radius: 5px;
-  font-size: 16px;
-  color: black;
-}
-#submit:hover {
-  background-color: royalblue;
-  color: white;
-  transition: 0.3s ease-in;
-  cursor: pointer;
-}
-.register-container p {
-  text-align: center;
-  margin: 5px 0;
 }
 
 
