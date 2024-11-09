@@ -450,8 +450,9 @@ input {
 }
 #submit {
   width: 200px;
-  margin: 10px 50px;
   padding: 10px 80px;
+  margin-left: 50px;
+  margin-right: auto;
   background-color:#ffffff;
   color: white;
   border: 2px solid black;
@@ -493,26 +494,35 @@ input {
   font-size: 14px;
   border-radius: 5px;
 }
-#submit {
-  width: 200px;
-  margin: 10px 50px;
-  padding: 10px 80px;
-  background-color:#ffffff;
-  color: white;
-  border: 2px solid black;
-  border-radius: 5px;
-  font-size: 16px;
-  color: black;
+/* CLOTHES STYLING */
+.clothes-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  column-gap: 2em;
+  row-gap: 2em;
 }
-#submit:hover {
-  background-color: royalblue;
-  color: white;
-  transition: 0.3s ease-in;
-  cursor: pointer;
-}
-.register-container p {
+.clothes-box {
+  width: 300px;
+  height: 300px;
   text-align: center;
-  margin: 5px 0;
+  border: 2px solid rgba(222, 212, 212, 0.726);
+  border-radius: 20px;
+  font-size: 16px;
+}
+.clothes-container img {
+  width: 200px;
+  height: 200px;
+}
+.clothes-button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ffffff;
+}
+.clothes-button:hover {
+  background-color: rgb(54, 178, 54);
+  transition: 0.3 ease-in;
 }
 
 
