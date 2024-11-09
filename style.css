@@ -17,6 +17,7 @@
   height:auto;
   margin-left: 50px;
   margin-right: 800px;
+  cursor: pointer;
 }
 .navbar ul {
   display: flex;
@@ -57,7 +58,7 @@
   color: white;
   font-size: 1.5rem;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  padding: 10px 30px;
   border-radius: 5px;
   text-align: center;
 }
@@ -141,7 +142,7 @@ img.displaySlide {
 .shop-button{
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     color:black;
     border:none;
     border-radius: 5px; 
@@ -189,7 +190,7 @@ img.displaySlide {
 .shop-button2{
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     color:black;
     border:none;
     border-radius: 5px; 
@@ -258,6 +259,100 @@ h1 {
 }
 .location {
   width: 16px;
+}
+/* CLOTHES SHOPPING STYLING */
+.clothes {
+  background-image: url(images/clothes1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  color: white;       
+  font-size: 36px;
+}
+.clothes p {
+  padding: 20px;
+  background-color:rgba(222, 212, 212, 0.726);
+}
+.buy-clothes{
+  padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color:black;
+    border:none;
+    border-radius: 5px; 
+    cursor:pointer;
+    margin-top: 15px;  
+}
+/* SHOES SHOPPING STYLING */
+.shoes {
+  background-image: url(images/clothes2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto;
+  color: white;       
+  font-size: 36px;
+}
+.shoes p {
+  padding: 20px;
+  background-color:rgba(222, 212, 212, 0.726);
+}
+.buy-shoes{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color:black;
+  border:none;
+  border-radius: 5px; 
+  cursor:pointer;
+  margin-top: 15px;   
+}
+/* SALE PART STYLING  */
+.sale {
+  background-image: url(images/sale1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  color: white;       
+  font-size: 36px;
+}
+.sale p {
+  margin-top: 100px;
+  padding: 20px;
+  background-color:rgba(225, 69, 69, 0.726);
+}
+.sale-button{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color:black;
+  border:none;
+  border-radius: 5px; 
+  cursor:pointer;
+  margin-top: 15px; 
 }
 
 /* About Us */ 
