@@ -1,3 +1,4 @@
+// Image Slider
 const slides = document.querySelectorAll(".slides .slide");
 let slideIndex = 0;
 
