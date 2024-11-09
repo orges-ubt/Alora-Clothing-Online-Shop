@@ -233,7 +233,8 @@ h1 {
 /* Footer */
 .footer-container{
   width:100%;
-  margin: 50px auto;
+  margin-top: 20px;
+  margin-bottom: 0;
   padding: 20px;
   text-align: center;
   background-color: #f0f0f0;
@@ -344,6 +345,10 @@ h1 {
   padding: 20px;
   background-color:rgba(225, 69, 69, 0.726);
 }
+.sale a{
+  text-decoration: none;
+  color: black;
+}
 .sale-button{
   padding: 10px 20px;
   font-size: 16px;
@@ -444,7 +449,8 @@ input {
   border-radius: 5px;
 }
 #submit {
-  margin: 10px 45px;
+  width: 200px;
+  margin: 10px 50px;
   padding: 10px 80px;
   background-color:#ffffff;
   color: white;
