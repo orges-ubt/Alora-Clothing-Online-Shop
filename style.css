@@ -17,6 +17,7 @@
   height:auto;
   margin-left: 50px;
   margin-right: 800px;
+  cursor: pointer;
 }
 .navbar ul {
   display: flex;
