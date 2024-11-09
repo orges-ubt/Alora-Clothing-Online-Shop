@@ -494,14 +494,35 @@ input {
   font-size: 14px;
   border-radius: 5px;
 }
+/* CLOTHES STYLING */
 .clothes-container {
-
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  column-gap: 2em;
+  row-gap: 2em;
 }
 .clothes-box {
-  
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border: 2px solid rgba(222, 212, 212, 0.726);
+  border-radius: 20px;
+  font-size: 16px;
 }
 .clothes-container img {
-  
+  width: 200px;
+  height: 200px;
+}
+.clothes-button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ffffff;
+}
+.clothes-button:hover {
+  background-color: rgb(54, 178, 54);
+  transition: 0.3 ease-in;
 }
 
 
