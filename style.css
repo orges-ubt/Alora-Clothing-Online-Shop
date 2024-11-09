@@ -525,6 +525,38 @@ input {
   transition: 0.3 ease-in;
 }
 
+/* SHOES PAGE */
+
+.shoes-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  column-gap: 2em;
+  row-gap: 2em;
+}
+.shoes-box {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border: 2px solid rgba(222, 212, 212, 0.726);
+  border-radius: 20px;
+  font-size: 16px;
+}
+.shoes-container img {
+  width: 200px;
+  height: 200px;
+}
+.shoes-button {
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #ffffff;
+}
+.shoes-button:hover {
+  background-color: rgb(54, 178, 54);
+  transition: 0.3 ease-in;
+}
+
 
    
 
