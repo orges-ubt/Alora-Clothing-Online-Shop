@@ -56,14 +56,14 @@
   margin: auto;
   overflow: hidden;
 }
-.slider img {
+.slides img {
   width: 900px;
   height: 500px;
-  display: none;
-  opacity: 0;
+  /* display: none;
+  opacity: 0; */
   transition: opacity 0.5s ease-in-out;
 }
-.displaySlide {
+img.displaySlide {
   display: block;
   opacity: 1;
 }
@@ -84,11 +84,9 @@
 .next {
   right: 0;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'DM Sans',sans-serif;
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
 }
 /* Clothing Part */
 .background-image {
@@ -99,7 +97,6 @@
     background-repeat: no-repeat;
    
 }
-
 .content{
     position:absolute;
     top: 150%;
@@ -109,7 +106,6 @@
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 .center-background{
     width: 900px; 
     height: 500px; 
@@ -128,7 +124,6 @@
     
     
 }
-
 .shop-button{
     padding: 10px 20px;
     font-size: 16px;
@@ -139,14 +134,8 @@
     cursor:pointer;
     margin-top: 15px;   
 }
-
 .shop-button:hover{
     background-color: white;
-}
-
-p {
-    color:white;
-   
 }
 /* Shoes Part */
 .background2-image {
@@ -157,17 +146,15 @@ p {
     background-repeat: no-repeat;
    
 }
-
 .content2{
     position:absolute;
     top: 225%;
-    left:81%;
-    transform: translate(-225%, -81%);
+    left:82%;
+    transform: translate(-225%, -82%);
     color:white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 .center-background2{
     width: 900px; 
     height: 500px; 
@@ -185,7 +172,6 @@ p {
     color:white;
     
 }
-
 .shop-button2{
     padding: 10px 20px;
     font-size: 16px;
@@ -196,15 +182,9 @@ p {
     cursor:pointer;
     margin-top: 15px;   
 }
-
 .shop-button2:hover{
     background-color: white;
 }
-
-p {
-    color:white;
-}
-
 .content2 p {
     color: white;
 }
