@@ -56,34 +56,41 @@
   margin: auto;
   overflow: hidden;
 }
+
 .slides img {
   width: 900px;
   height: 500px;
-  /* display: none;
-  opacity: 0; */
+  display: none;
+  opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
+
 img.displaySlide {
   display: block;
   opacity: 1;
 }
+
 .slider button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
   padding: 10px 15px;
-  background-color: rgba(0%, 0%, 0%, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   cursor: pointer;
+  z-index: 1;
 }
+
 .prev {
   left: 0;
 }
+
 .next {
   right: 0;
 }
+
 @keyframes fade {
   from {opacity: .5}
   to {opacity: 1}
@@ -188,6 +195,7 @@ img.displaySlide {
 .content2 p {
     color: white;
 }
+/* Brands Part */
 h1 {
     text-align: center;
     margin-bottom: 24px;
@@ -201,6 +209,7 @@ h1 {
     width:200px;
     height:200px;
 }
+
 .container3 {
     width: 900px;
     height: 500px;
@@ -212,6 +221,36 @@ h1 {
     align-content: stretch;
     margin-left: auto;
     margin-right: auto;
+}
+/* Footer */
+.footer-container{
+  width:100%;
+  margin: 20px auto;
+  padding: 20px 30px 30px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+.footer-container p{
+  margin-top: 12px;
+}
+.social img{
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+}
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  text-align: center;
+}
+.social a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+.location {
+  width: 16px;
 }
    
 
