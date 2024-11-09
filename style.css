@@ -233,7 +233,8 @@ h1 {
 /* Footer */
 .footer-container{
   width:100%;
-  margin: 50px auto;
+  margin-top: 20px;
+  margin-bottom: 0;
   padding: 20px;
   text-align: center;
   background-color: #f0f0f0;
@@ -343,6 +344,10 @@ h1 {
   margin-top: 100px;
   padding: 20px;
   background-color:rgba(225, 69, 69, 0.726);
+}
+.sale a{
+  text-decoration: none;
+  color: black;
 }
 .sale-button{
   padding: 10px 20px;
