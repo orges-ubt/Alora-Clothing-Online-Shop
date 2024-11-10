@@ -6,7 +6,8 @@
   box-sizing: border-box;
   font-family:'DM Sans',sans-serif;
 }
-/* Navigation Bar Styling */
+
+/* NAVIGATION BAR STYLING */
 .navbar {
   margin-top: -10px;
   display: flex;
@@ -14,14 +15,14 @@
 }
 .navbar img {
   width: 150px;
-  height:auto;
+  height: auto;
   margin-left: 50px;
   margin-right: 800px;
   cursor: pointer;
 }
 .navbar ul {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   list-style-type: none;
 }
 .navbar ul li {
@@ -33,23 +34,23 @@
   text-decoration: none;
   color: black;
   font-size: 20px;
-
 }
 .user {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   margin-left: 50px;
   width: 40px;
   cursor: pointer;
 }
 .shopping-bag {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   width: 40px;
   margin-left: 20px;
   cursor: pointer;
 }
-/* Slider Styling */
+
+/* SLIDER PART STYLING */
 #slider-text {
   position: absolute;
   top: 50%;
@@ -69,7 +70,6 @@
   margin: auto;
   overflow: hidden;
 }
-
 .slides img {
   width: 900px;
   height: 500px;
@@ -77,12 +77,10 @@
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
-
 img.displaySlide {
   display: block;
   opacity: 1;
 }
-
 .slider button {
   position: absolute;
   top: 50%;
@@ -95,142 +93,138 @@ img.displaySlide {
   cursor: pointer;
   z-index: 1;
 }
-
 .prev {
   left: 0;
 }
-
 .next {
   right: 0;
 }
-/* Clothing Part */
+
+/* CLOTHING PART*/
 .background-image {
-    position: relative;
-    background-image: url('images/foto1.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-   
+  position: relative;
+  background-image: url('images/foto1.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .content{
-    position:absolute;
-    top: 150%;
-    left:75%;
-    transform: translate(-150%, -75%);
-    color:white;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+  position:absolute;
+  top: 150%;
+  left:75%;
+  transform: translate(-150%, -75%);
+  color:white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .center-background{
-    width: 900px; 
-    height: 500px; 
-    margin: 50px auto; 
-    background-image: url('images/foto1.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:center ;
-    text-align: center;
-    border: 1px solid #ddd;
-    color:white; 
-    
-    
+  width: 900px; 
+  height: 500px; 
+  margin: 50px auto; 
+  background-image: url('images/foto1.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center ;
+  text-align: center;
+  border: 1px solid #ddd;
+  color:white;   
 }
 .shop-button{
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #ffffff;
-    color:black;
-    border:none;
-    border-radius: 5px; 
-    cursor:pointer;
-    margin-top: 15px;   
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color:black;
+  border:none;
+  border-radius: 5px; 
+  cursor:pointer;
+  margin-top: 15px;   
 }
 .shop-button:hover{
-    background-color: white;
-}
-/* Shoes Part */
-.background2-image {
-    position: relative;
-    background-image: url('images/foto2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-   
-}
-.content2{
-    position:absolute;
-    top: 225%;
-    left:82%;
-    transform: translate(-225%, -82%);
-    color:white;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.center-background2{
-    width: 900px; 
-    height: 500px; 
-    margin: 50px auto; 
-    background-image: url('images/foto2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:center ;
-    text-align: center;
-    border: 1px solid #ddd;
-    color:white;
-    
-}
-.shop-button2{
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #ffffff;
-    color:black;
-    border:none;
-    border-radius: 5px; 
-    cursor:pointer;
-    margin-top: 15px;   
-}
-.shop-button2:hover{
-    background-color: white;
-}
-.content2 p {
-    color: white;
-}
-/* Brands Part */
-h1 {
-    text-align: center;
-    margin-bottom: 24px;
-    border: 2px solid black;
-    border-radius: 30px;
-    padding: 10px 30px;
-    display: inline-block;
-    margin-left: 42%;
-}
-.container3 img{
-    width:200px;
-    height:200px;
+  background-color: white;
 }
 
-.container3 {
-    width: 900px;
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    align-content: stretch;
-    margin-left: auto;
-    margin-right: auto;
+/* SHOES PART STYLING */
+.background2-image {
+  position: relative;
+  background-image: url('images/foto2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
 }
-/* Footer */
+.content2{
+  position:absolute;
+  top: 225%;
+  left:82%;
+  transform: translate(-225%, -82%);
+  color:white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.center-background2{
+  width: 900px; 
+  height: 500px; 
+  margin: 50px auto; 
+  background-image: url('images/foto2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center ;
+  text-align: center;
+  border: 1px solid #ddd;
+  color:white;  
+}
+.shop-button2{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color:black;
+  border:none;
+  border-radius: 5px; 
+  cursor:pointer;
+  margin-top: 15px;   
+}
+.shop-button2:hover{
+  background-color: white;
+}
+.content2 p {
+  color: white;
+}
+
+/* BRANDS PART STYLING*/
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-left: 42%;
+}
+.container3 img{
+  width:200px;
+  height:200px;
+}
+.container3 {
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: stretch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FOOTER */
 .footer-container{
   width:100%;
   margin-top: 20px;
@@ -261,6 +255,7 @@ h1 {
 .location {
   width: 16px;
 }
+
 /* CLOTHES SHOPPING STYLING */
 .clothes {
   background-image: url(images/clothes1.webp);
@@ -284,14 +279,15 @@ h1 {
 }
 .buy-clothes{
   padding: 10px 20px;
-    font-size: 16px;
-    background-color: #ffffff;
-    color:black;
-    border:none;
-    border-radius: 5px; 
-    cursor:pointer;
-    margin-top: 15px;  
+  font-size: 16px;
+  background-color: #ffffff;
+  color:black;
+  border:none;
+  border-radius: 5px; 
+  cursor:pointer;
+  margin-top: 15px;  
 }
+
 /* SHOES SHOPPING STYLING */
 .shoes {
   background-image: url(images/clothes2.jpg);
@@ -323,6 +319,7 @@ h1 {
   cursor:pointer;
   margin-top: 15px;   
 }
+
 /* SALE PART STYLING  */
 .sale {
   background-image: url(images/sale1.jpg);
@@ -360,16 +357,14 @@ h1 {
   margin-top: 15px; 
 }
 
-/* About Us */ 
+/* ABOUT US PART STYLING */ 
 h2 {
   text-align: center;
   margin-bottom: 25px;
   padding: 10px 30px;
   display: inline-block;
   margin-left: 14%;
- 
 }
-
 #aboutUs {
   text-align: center;
   margin-bottom: 20px;
@@ -379,42 +374,33 @@ h2 {
   margin-right: 10%;
   background-color: rgba(0, 0, 0, 0.1);
 }
-
 .container4 img {
   width: 300px;
   height: 240px;
 }
-
 .container4 {
   display: flex;
- flex-flow: row;
- justify-content: center;
-   
+  flex-flow: row;
+  justify-content: center;
 }
 .box1{
   display: flex;
   margin-left: 50px;
   margin-bottom: 15px;
-
 }
-
 .box2{
   display: flex;
   flex-flow: row;
  justify-content: center;
-  
 }
-
 .container5 img {
   width: 900px;
   height: 400px;
 }
-
 h3 {
   text-align: center;
   margin-bottom: 10px;
 }
-
 #text {
   text-align: center;
   margin-bottom: 20px;
@@ -423,8 +409,6 @@ h3 {
   margin-left: 38%;
   font-size: 20px;
 }
-
-
 
 /* LOG IN STYLING */
 .login-container {
@@ -470,8 +454,7 @@ input {
   margin: 5px 0;
 }
 
-/* REGISTER FORM */
-
+/* REGISTER FORM PART STYLING */
 .register-container {
   width: 300px;
   height: 600px;
@@ -485,7 +468,6 @@ input {
   width: 100px;
   margin-left: 92px;
   margin-top: -15px;
-  
 }
 input {
   padding: 10px;
@@ -493,7 +475,8 @@ input {
   font-size: 14px;
   border-radius: 5px;
 }
-/* CLOTHES STYLING */
+
+/* CLOTHES PAGE STYLING */
 .clothes-container {
   display: flex;
   flex-wrap: wrap;
@@ -524,8 +507,7 @@ input {
   transition: 0.3s ease-in;
 }
 
-/* SHOES PAGE */
-
+/* SHOES PAGE STYLING*/
 .shoes-container {
   display: flex;
   flex-wrap: wrap;

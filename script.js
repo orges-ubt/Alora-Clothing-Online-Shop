@@ -1,4 +1,4 @@
-// Image Slider
+// IMAGE SLIDER
 const slides = document.querySelectorAll(".slides .slide");
 let slideIndex = 0;
 
@@ -29,7 +29,7 @@ function nextSlide() {
     showSlide(slideIndex);
 }
 
-//Log In Form Validation
+//LOG IN FORM VALIDATION
 function validateLoginForm() {
     const username=document.getElementById("loginUsername").value;
     const password=document.getElementById("loginPassword").value;
