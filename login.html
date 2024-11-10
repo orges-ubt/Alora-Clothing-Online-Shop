@@ -27,12 +27,14 @@
   </nav>
   <section id="login">
   <!-- LOG IN FORM -->
+   <script src="script.js"></script>
    <div class="login-container">
     <img src="images/Logo.png" alt="Alora Logo">
-    <form action="">
-      <input type="username" placeholder="Type your username" id="username" required>
+    <form id="loginForm" onsubmit="return validateLoginForm()" action="">
+      <input type="text" placeholder="Type your username" id="loginUsername" required>
       <br>
-      <input type="password" placeholder="Type your password" id="password" required>
+      <p id="errorMessage" style="color: red;"></p>
+      <input type="password" placeholder="Type your password" id="loginPassword" required>
       <br>
       <input type="submit" value="Log in" id="submit">
       <p>Don't have an account?Sign up below:</p>
