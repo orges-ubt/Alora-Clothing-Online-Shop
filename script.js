@@ -54,8 +54,7 @@ if (!passwordPattern.test(password)) {
     return true;    
 }
 
-
-// Register Form Validation 
+// REGISTER FORM VALIDATION
 function validateRegisterForm() {
     const name = document.getElementById("registerName").value;
     const surname = document.getElementById("registerSurname").value;
