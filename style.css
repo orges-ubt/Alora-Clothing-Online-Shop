@@ -198,7 +198,7 @@ img.displaySlide {
 }
 
 /* BRANDS PART STYLING*/
-h1 {
+#brands-heading {
   text-align: center;
   margin-bottom: 24px;
   border: 2px solid black;
@@ -206,6 +206,15 @@ h1 {
   padding: 10px 30px;
   display: inline-block;
   margin-left: 42%;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-left: 45%;
 }
 .container3 img{
   width:200px;
