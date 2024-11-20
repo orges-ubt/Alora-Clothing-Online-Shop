@@ -545,7 +545,7 @@ input {
 }
 .shoes-button:hover {
   background-color: rgb(54, 178, 54);
-  transition: 0.3 ease-in;
+  transition: 0.3s ease-in;
 }
 
 
