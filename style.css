@@ -549,8 +549,10 @@ input {
 }
 
 /* RESPONSIVENESS */
-@media (max-width: 768px) {
-  
+@media (max-width: 624px) {
+  .navbar ul {
+    font-size:13px;
+  }
 }
 
 
