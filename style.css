@@ -103,7 +103,7 @@ img.displaySlide {
 /* CLOTHING PART*/
 .center-background {
   width: 67%;
-  height: auto;
+  height: 500px;
   margin: 50px auto;
   background-image: url('images/foto1.webp');
   background-size: cover;
@@ -153,7 +153,7 @@ img.displaySlide {
 }
 .center-background2 {
   width: 67%;
-  height: auto;
+  height: 500px;
   margin: 50px auto;
   background-image: url('images/foto2.jpg');
   background-size: cover;
