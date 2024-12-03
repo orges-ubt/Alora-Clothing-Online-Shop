@@ -65,7 +65,7 @@
 }
 .slider {
   width: 67%;
-  height: auto;
+  height: 500px;
   position: relative;
   margin: auto;
   overflow: hidden;
@@ -580,7 +580,17 @@ input {
     font-size:13px;
   }
 }
-
+@media (max-width: 990px) {
+  
+  .slider {
+    width: 67%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+}
 
 
 
