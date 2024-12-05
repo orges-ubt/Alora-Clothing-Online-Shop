@@ -207,19 +207,10 @@ img.displaySlide {
   border-radius: 30px;
   padding: 10px 30px;
   display: inline-block;
-
 }
 .divider-brands {
   display: flex;
   justify-content: center;
-}
-h1 {
-  text-align: center;
-  margin-bottom: 24px;
-  border: 2px solid black;
-  border-radius: 30px;
-  padding: 10px 30px;
-  display: inline-block;
 }
 .container3 img{
   width:200px;
@@ -276,16 +267,19 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 900px;
+  width: 67%;
   height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 auto;
+  position: relative;
+  margin: auto;
+  margin-bottom: 50px;
   color: white;       
   font-size: 36px;
+  overflow: hidden;
 }
 .clothes p {
   padding: 20px;
@@ -308,16 +302,19 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 900px;
+  width: 67%;
   height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 50px auto;
+  position: relative;
+  margin:  auto;
+  margin-bottom: 50px;
   color: white;       
   font-size: 36px;
+  overflow: hidden;
 }
 .shoes p {
   padding: 20px;
@@ -340,16 +337,18 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 900px;
+  width: 67%;
   height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 auto;
+  position: relative;
+  margin: auto;
   color: white;       
   font-size: 36px;
+  overflow: hidden;
 }
 .sale p {
   margin-top: 100px;
@@ -372,6 +371,19 @@ h1 {
 }
 
 /* ABOUT US PART STYLING */ 
+  #about-us-title {
+  text-align: center;
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 10px 30px;
+  display: inline-block;
+}
+#about-us-div {
+  display: flex;
+  justify-content: center;
+}
+
 h2 {
   text-align: center;
   margin-bottom: 25px;
@@ -423,6 +435,7 @@ h3 {
   margin-left: 38%;
   font-size: 20px;
 }
+
 
 /* LOG IN STYLING */
 .login-container {
@@ -585,7 +598,16 @@ input {
   .content2 p {
     font-size:13px;
   }
-}
+  .clothes p{
+    font-size: 13px;
+  }
+  .shoes p{
+    font-size: 13px;
+  }
+  .sale p{
+    font-size: 13px;
+  }
+  }
 @media (max-width: 990px) {
 
   .slider {
@@ -595,7 +617,30 @@ input {
     margin: auto;
     overflow: hidden;
   }
-
+  .clothes{
+    width: 67%;
+    height: 250px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+  .shoes{
+    width: 67%;
+    height:  250px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+  .sale{
+    width: 67%;
+    height:  250px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
 }
 
    
