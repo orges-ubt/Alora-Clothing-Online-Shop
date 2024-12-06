@@ -534,6 +534,7 @@ input {
   justify-content: center;
   column-gap: 2em;
   row-gap: 2em;
+  margin-top: 20px;
 }
 .clothes-box {
   width: 300px;
@@ -565,6 +566,7 @@ input {
   justify-content: center;
   column-gap: 2em;
   row-gap: 2em;
+  margin-top: 20px;
 }
 .shoes-box {
   width: 300px;
