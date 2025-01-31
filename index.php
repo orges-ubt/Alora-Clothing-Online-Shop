@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,6 @@
 </head>
 <body>
   <!-- Navigation Bar -->
-   
   <nav class="navbar">
     <div id="nav-logo">
       <a href="index.php"><img src="images/logo.png" alt="Alora Logo"></a>
@@ -27,8 +29,13 @@
     </svg>
   </a></li>
     </ul>
-      
-     
+    <?php
+            if (isset($_SESSION['user_id'])) {
+                if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
+                    echo '<li><a id="dashboard" href="dashboard.php">Dashboard</a></li>';
+                }
+            }
+            ?>
   </nav>
 </div>
 
@@ -48,7 +55,7 @@
      <div class="center-background">
         <div class="content">
          <p>Discover our exclusive collection of clothing with comfort and style.Each piece is design with big attention to detail,using high-quality fabrics that ensure a luxurious feel.From classics like elegant blouses and tailored trousers such as relaxed-fit dresses .Elevate your wardrobe with pieces that inspire confidence.</p>
-         <a href="clothes.html">
+         <a href="clothes.php">
          <button class="shop-button">Shop Clothes</button>
         </a>
         </div>
@@ -57,7 +64,7 @@
      <div class="center-background2">
       <div class="content2">
         <p>Elevate your footwear game with our exclusive collection of men's shoes. Whether you're heading to the office, hitting the gym, or stepping out for a night on the town, we have the perfect pair for you.</p>
-          <a href="shoes.html">
+          <a href="shoes.php">
               <button class="shop-button2">Shop Shoes</button>
           </a>
       </div>

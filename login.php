@@ -7,8 +7,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- NAVIGATION BAR -->
-  <nav class="navbar">
+<?php
+require_once "user.php";
+
+$user = new User();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+
+    if ($user->login($email, $password)) {
+        header("Location: index.php");
+        exit();
+    } else {
+        echo "Te dhenat jane gabim!";
+    }   
+}
+?>
+   <!-- NAVIGATION BAR -->
+   <nav class="navbar">
     <div id="nav-logo">
       <a href="index.php"><img src="images/logo.png" alt="Alora Logo"></a>
     </div>
@@ -29,34 +46,36 @@
       
      
   </nav>
-  <main>
-  <!-- CLOTHES SHOPPING -->
-   <div class="clothes">
-    <p>Hurry up!Limited-edition pieces are rapidly solding out,come and get your favourite piece of style.</p>
-    <a href="clothes.php"><button class="buy-clothes">Shop now</button>
+  <section id="login">
+  <!-- LOG IN FORM -->
+   <script src="script.js"></script>
+   <div class="login-container">
+    <img src="images/Logo.png" alt="Alora Logo">
+    <form id="loginForm" onsubmit="return validateLoginForm()" action="" method="POST">
+      <input type="text" name="email" placeholder="Type your username" id="loginUsername" required>
+      <br>
+      <p id="errorMessage" style="color: red;"></p>
+      <input type="password" name="password" placeholder="Type your password" id="loginPassword" required>
+      <br>
+      <input type="submit" value="Log in" id="submit">
+      <p>Don't have an account?Sign up below:</p>
+    </form>
+    <a href="register.html">
+      <input type="submit" value="Sign up" id="submit">
     </a>
    </div>
-   <!-- SHOES SHOPPING -->
-   <div class="shoes">
-    <p>If you are a shoe hype beast,we know a great place for shoes shopping.</p>
-    <a href="shoes.php">
-    <button class="buy-shoes">Shop now</button>
-  </a>
-   </div>
-   <!-- SALE PART -->
-   <div class="sale">
-    <p>Fall 2024-Continue to look good,20% sale for every new customer that signs up.</p>
-    <a href="register.php">
-    <button class="sale-button">Register now</button>
-    </a>
-   </div>
-  </main>
+  </section>
+  <?php
+    if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
+        echo '<a href="dashboard.php"><button>Dashboard</button></a>';
+    }
+    ?>
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-container">
       <div class="social">
         <a href="https://facebook.com">
-          <img src="images/social-facebook.svg" alt="Facebook" />
+          <img src="images/social-facebook.svg" alt="Facebook"/>
         </a>
         <a href="https://instagram.com">
           <img src="images/social-instagram.svg" alt="Instagram" />

@@ -4,6 +4,10 @@ if (!isset($_SESSION['user_id'])) {
     header("Location: index.php");
     exit();
 }
-echo "Miresevini, " . ($_SESSION['role'] == 'admin' ? "Administrator" : "Përdorues") . "!<br>";
-echo "<a href='logout.php'>Dil</a>";
+if ($_SESSION['role'] == 'admin') {
+    echo "Welcome admin!<br>";
+} else {
+    echo "Welcome user!<br>";
+}
+echo "<a href='logout.php'>Log out</a>";
 ?>

@@ -30,5 +30,27 @@ class User {
 
         return $stmt->execute();
     }
+
+    public function login($email, $password) {
+        $stmt = $this->db->prepare("SELECT * FROM users WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result()->fetch_assoc();
+
+        if ($result && password_verify($password, $result['password'])) {
+            session_start();
+            $_SESSION['user_id'] = $result['id'];
+            $_SESSION['role'] = $result['role'];
+            return true;
+        }
+        return false;
+    }
+
+    public function getUserById($id) {
+        $stmt = $this->db->prepare("SELECT * FROM users WHERE id = ?");
+        $stmt->bind_param("i", $id);
+        $stmt->execute();
+        return $stmt->get_result()->fetch_assoc();
+    }
 }
 ?>
