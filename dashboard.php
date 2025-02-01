@@ -6,8 +6,6 @@ if (!isset($_SESSION['user_id'])) {
 }
 if ($_SESSION['role'] == 'admin') {
     echo "Welcome admin!<br>";
-} else {
-    echo "Welcome user!<br>";
 }
 echo "<a href='logout.php'>Log out</a>";
 ?>
