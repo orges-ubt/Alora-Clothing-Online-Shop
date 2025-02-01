@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <title>Edit User</title>
     <style>
-        body { font-family: Arial, sans-serif; }
+        body { font-family: DM Sans, sans-serif; }
         .container { width: 500px; margin: auto; }
         .error { color: red; }
         label { display: block; margin-top: 10px; }

@@ -9,7 +9,7 @@ $result = $user->read();
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body { font-family: Arial, sans-serif; }
+        body { font-family: DM Sans, sans-serif; }
         .container { width: 800px; margin: auto; }
         table { width: 100%; border-collapse: collapse; margin-top: 20px; }
         th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
@@ -35,6 +35,7 @@ $result = $user->read();
       <li><a href="index.php">Home</a></li>
       <li><a href="products.php">Products</a></li>
       <li><a href="about.php">About Us</a></li>
+      <li><a href="blog.php">Blog</a></li>
       <?php
       if (!isset($_SESSION['user_id'])) {
           echo '<li><a href="login.php"><svg width="33px" height="33px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="user"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg></a></li>';

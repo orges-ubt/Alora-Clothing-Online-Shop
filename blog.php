@@ -72,7 +72,7 @@ $posts = $postObj->getPosts();
             box-sizing: border-box;
         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: DM Sans, sans-serif;
             margin: 0;
             padding: 0;
             background: #f4f4f4;
