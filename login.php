@@ -79,11 +79,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </a>
    </div>
   </section>
-  <?php
-    if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
-        echo '<a href="dashboard.php"><button>Dashboard</button></a>';
-    }
-    ?>
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-container">
