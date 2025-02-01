@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,37 +9,33 @@ session_start();
 <body>
   <!-- NAVIGATION BAR -->
   <nav class="navbar">
-    <div id="nav-logo">
-      <a href="index.php"><img src="images/logo.png" alt="Alora Logo"></a>
-    </div>
-    <div class="nav-ul">
+  <div id="nav-logo">
+    <a href="index.php"><img src="images/logo.png" alt="Alora Logo"></a>
+  </div>
+  <div class="nav-ul">
     <ul>
-    <?php
-            if (isset($_SESSION['user_id'])) {
-                if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
-                    echo '<li id="dashboard"><a href="dashboard.php">Dashboard</a></li>';
-                }
-            }
-            ?>
+      <?php
+      session_start();
+      if (isset($_SESSION['user_id']) && isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
+          echo '<li id="dashboard"><a href="dashboard.php">Dashboard</a></li>';
+      }
+      ?>
       <li><a href="index.php">Home</a></li>
       <li><a href="products.php">Products</a></li>
       <li><a href="about.php">About Us</a></li>
-      <li><a href="login.php"><svg width="33px" height="33px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="user">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-      </svg>
-    </a></li>
-    <?php
-    if (isset($_SESSION['user_id'])) {
-    if ($_SESSION['role'] !== 'admin') {
-      echo '<li><a href="logout.php"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="user">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M22 10.5h-6m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM4 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 10.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
-    </svg></a></li>';
-    }
-}
-    ?>
+      <?php
+      if (!isset($_SESSION['user_id'])) {
+          echo '<li><a href="login.php"><svg width="33px" height="33px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="user"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg></a></li>';
+      }
+      ?>
+      <?php
+      if (isset($_SESSION['user_id'])) {
+          echo '<li><a href="logout.php" style="padding: 10px 15px; background-color: rgb(212, 203, 203);color:white; text-decoration: none; border-radius: 4px;">Logout</a></li>';
+      }
+      ?>
     </ul>
-</div>
-  </nav>
+  </div>
+</nav>
   <main>
     <!-- SHOES PART -->
     <div class="shoes-container">
