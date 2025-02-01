@@ -81,5 +81,11 @@ $result = $user->read();
         <?php } ?>
     </table>
 </div>
+
+<?php 
+include_once 'blog_dashboard.php';
+?>
+<li><a href="blog_dashboard.php">Manage Reviews</a></li>
+
 </body>
 </html>
