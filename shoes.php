@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +17,13 @@
     </div>
     <div class="nav-ul">
     <ul>
+    <?php
+            if (isset($_SESSION['user_id'])) {
+                if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
+                    echo '<li id="dashboard"><a href="dashboard.php">Dashboard</a></li>';
+                }
+            }
+            ?>
       <li><a href="index.php">Home</a></li>
       <li><a href="products.php">Products</a></li>
       <li><a href="about.php">About Us</a></li>

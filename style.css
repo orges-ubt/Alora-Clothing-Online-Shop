@@ -8,6 +8,9 @@
 }
 
 /* NAVIGATION BAR STYLING */
+#dashboard {
+  list-style-type: none;
+}
 .navbar {
   margin-top: 0px;
   display: flex;
