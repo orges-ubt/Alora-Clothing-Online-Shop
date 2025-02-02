@@ -15,7 +15,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Blog Dashboard - Manage Reviews</title>
+    <title>Blog Dashboard</title>
     <style>
       body { font-family: , sans-serif; }
       .container { width: 900px; margin: auto; }
@@ -35,14 +35,14 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') {
         echo '<p class="message">' . htmlspecialchars($_GET['message']) . '</p>';
     }
     ?>
-    <p><a href="blog_create.php">Create New Review</a></p>
+    <p><a href="blog_create.php">Create new review</a></p>
     <table>
         <tr>
             <th>ID</th>
             <th>Review</th>
             <th>Picture</th>
-            <th>Posted By</th>
-            <th>Created At</th>
+            <th>Posted by</th>
+            <th>Created at</th>
             <th>Actions</th>
         </tr>
         <?php while ($row = $posts->fetch_assoc()) { ?>

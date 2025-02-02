@@ -211,7 +211,7 @@ $posts = $postObj->getPosts();
             <form method="POST" action="" enctype="multipart/form-data">
                 <textarea name="review" placeholder="Write your review here..." required></textarea>
                 <br>
-                <label for="image">Upload a Picture (optional):</label>
+                <label for="image">Upload a picture (optional):</label>
                 <input type="file" name="image" accept="image/*">
                 <br>
                 <input type="submit" name="submit_review" value="Post Review">

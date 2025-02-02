@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="email">Email:</label>
         <input type="email" name="email" value="<?php echo htmlspecialchars($currentUser['email']); ?>" required>
 
-        <label for="password">New Password (leave blank to keep current):</label>
+        <label for="password">New Password</label>
         <input type="password" name="password">
 
         <label for="confirmPassword">Confirm New Password:</label>

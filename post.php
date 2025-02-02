@@ -28,7 +28,7 @@ class Post {
             $stmt->execute();
             return $stmt->get_result();
         } else {
-            $query = "SELECT posts.*, users.name, users.surname FROM posts JOIN users ON posts.user_id = users.id ORDER BY posts.created_at DESC";
+            $query = "SELECT posts.*, users.name, users.surname FROM posts JOIN users ON posts.user_id = users.id ORDER BY posts.created_at ASC";
             return $this->db->query($query);
         }
     }

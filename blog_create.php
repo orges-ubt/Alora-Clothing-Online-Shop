@@ -77,15 +77,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php if ($error) { echo '<p class="error">'.$error.'</p>'; } ?>
     <?php if ($success) { echo '<p class="success">'.$success.'</p>'; } ?>
     <form method="POST" action="" enctype="multipart/form-data">
-        <label for="review">Your Review:</label>
+        <label for="review">Your review:</label>
         <textarea name="review" required></textarea>
         
-        <label for="image">Upload a Picture (optional):</label>
+        <label for="image">Upload a picture (optional):</label>
         <input type="file" name="image" accept="image/*">
         
         <input type="submit" value="Post Review">
     </form>
-    <p><a href="blog_dashboard.php">Back to Reviews</a></p>
+    <p><a href="blog_dashboard.php">Back to reviews</a></p>
 </div>
 </body>
 </html>

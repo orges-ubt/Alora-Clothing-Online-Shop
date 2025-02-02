@@ -105,7 +105,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ?>
         </p>
         
-        <label for="image">Upload New Picture (optional, will replace current):</label>
+        <label for="image">Upload new picture:</label>
         <input type="file" name="image" accept="image/*">
         
         <input type="submit" value="Update Review">
