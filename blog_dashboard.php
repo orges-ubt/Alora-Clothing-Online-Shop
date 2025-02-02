@@ -29,7 +29,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') {
 </head>
 <body>
 <div class="container">
-    <h2>Blog Dashboard - Manage Reviews</h2>
+    <h2>Blog Dashboard</h2>
     <?php 
     if (isset($_GET['message'])) {
         echo '<p class="message">' . htmlspecialchars($_GET['message']) . '</p>';
