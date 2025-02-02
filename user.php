@@ -24,7 +24,7 @@ class User {
         }
         
         $stmt = $this->db->prepare("INSERT INTO users (name, surname, phoneNumber, email, password, role) VALUES (?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssss", $name, $surname, $phoneNumber, $email, $hashedPassword, $role);
+        $stmt->bind_param("ssissi", $name, $surname, $phoneNumber, $email, $hashedPassword, $role);
         
         return $stmt->execute();
     }
@@ -60,10 +60,10 @@ class User {
         if (!empty($password)) {
             $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
             $stmt = $this->db->prepare("UPDATE users SET name = ?, surname = ?, phoneNumber = ?, email = ?, password = ? WHERE id = ?");
-            $stmt->bind_param("sssssi", $name, $surname, $phoneNumber, $email, $hashedPassword, $id);
+            $stmt->bind_param("ssissi", $name, $surname, $phoneNumber, $email, $hashedPassword, $id);
         } else {
             $stmt = $this->db->prepare("UPDATE users SET name = ?, surname = ?, phoneNumber = ?, email = ? WHERE id = ?");
-            $stmt->bind_param("ssssi", $name, $surname, $phoneNumber, $email, $id);
+            $stmt->bind_param("ssisi", $name, $surname, $phoneNumber, $email, $id);
         }
         return $stmt->execute();
     }
